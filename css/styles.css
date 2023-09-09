@@ -1,0 +1,55 @@
+/*
+Examples
+--bs-primary-rgb:       255, 0, 0;
+--bs-secondary-rgb:     0, 255, 0;
+*/
+p {
+  margin: 0;
+  text-indent: 0.75rem;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(315deg, rgb(0, 0, 0) 0%, rgb(33, 33, 33) 20%, rgb(66, 66, 66) 80%, rgb(102, 102, 102) 100%);
+  color: white;
+}
+
+h3, h4 {
+  margin-bottom: 0;
+}
+
+.list-group_date::after {
+  content: " ~";
+}
+
+.book::before,
+#quote::before {
+  content: open-quote;
+}
+.book::after,
+#quote::after {
+  content: close-quote;
+}
+
+.info-block + .info-block {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 2px solid darkgray;
+}
+
+@media screen and (min-width: 576px) {
+  #application {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #application {
+    width: 1200px;
+  }
+  .info-block.col-lg-6 {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    border-top: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

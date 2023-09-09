@@ -1,0 +1,28 @@
+// Override Bootstrap rules here ...
+// Some rules can be overridden only if bootstrap.scss exists
+
+/*
+Examples
+--bs-primary-rgb:       255, 0, 0;
+--bs-secondary-rgb:     0, 255, 0;
+*/
+
+p
+{
+    margin: 0;
+    text-indent: 0.75rem;
+}
+
+body
+{
+    background: rgb(0,0,0);
+    background: 
+        linear-gradient(315deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 20%, rgba(66,66,66,1) 80%, rgba(102,102,102,1) 100%);
+    
+    color: white;
+}
+
+h3, h4
+{
+    margin-bottom: 0;
+}

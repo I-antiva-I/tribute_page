@@ -1,0 +1,55 @@
+@use "./overrides";
+
+
+.list-group_date
+{
+    &::after
+    {
+        content: " ~";
+    }
+}
+
+.book,
+#quote
+{
+    &::before
+    {
+        content: open-quote;
+    }
+    &::after
+    {
+        content: close-quote;
+    }
+}
+
+
+.info-block + .info-block
+{
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid darkgray;
+}
+
+@media screen and (min-width: 576px) 
+{
+    #application
+    {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }    
+}
+
+@media screen and (min-width: 992px) 
+{
+    #application
+    {
+        width: 1200px; // X-Large
+    }  
+    .info-block.col-lg-6
+    {
+        margin-top: 0rem;
+        padding-top: 0rem;
+        border-top: none;
+    }  
+ 
+}
